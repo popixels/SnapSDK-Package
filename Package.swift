@@ -7,15 +7,26 @@ let package = Package(
     name: "SnapSDK",
     products: [
         .library(
-            name: "SnapSDK",
-            targets: [
-                "SCSDKCoreKit",
-                "SCSDKCreativeKit",
-                "SCSDKBitmojiKit",
-                "SCSDKLoginKit",
-                "SCSDKStoryKit"
-            ]
+            name: "SCSDKCoreKit",
+            targets: ["SCSDKCoreKit"]
         ),
+        .library(
+            name: "SCSDKCreativeKit",
+            targets: ["SCSDKCreativeKit"]
+        ),
+        .library(
+            name: "SCSDKBitmojiKit",
+            targets: ["SCSDKBitmojiKit"]
+        ),
+        .library(
+            name: "SCSDKLoginKit",
+            targets: ["SCSDKLoginKit"]
+        ),
+        .library(
+            name: "SCSDKStoryKit",
+            targets: ["SCSDKStoryKit"]
+        ),
+        
     ],
     targets: [
         .binaryTarget(
